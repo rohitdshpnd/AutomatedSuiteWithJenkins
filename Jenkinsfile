@@ -14,9 +14,10 @@ pipeline {
             }
         }
         
-        stage('Deployed To UAT') {
+        stage('Running Automated Suite') {
             steps {
-                echo 'Running Tests UAT....'
+                echo 'Running Tests DEV....'
+                bat 'mvn clean test'
             }
         }
         
