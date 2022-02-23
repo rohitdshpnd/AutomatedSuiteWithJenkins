@@ -16,7 +16,7 @@ pipeline {
         
         stage('Running Automated Suite') {
             steps {
-                echo 'Running Tests DEV....'
+                echo 'Running Tests in DEV....'
                 bat 'mvn clean test'
             }
         }
